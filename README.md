@@ -1,0 +1,1 @@
+# Docker MongoDB - Single-node Replica Set
