@@ -1,0 +1,5 @@
+.git
+data/db/
+docs/
+*.md
+*.yaml
