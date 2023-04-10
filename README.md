@@ -33,6 +33,6 @@ on the mongo instance. You can read the procedure in the [MongoDB documentation]
 
 ---
 
-Thank you🙏\
-👍 Like it?\
-🌠 Star it?
+👍 Like it\
+🌠 Star it\
+📥 Take it
