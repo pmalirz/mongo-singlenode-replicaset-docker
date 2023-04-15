@@ -28,8 +28,16 @@ docker run -d mogno-rs0-image
 ## How it works?
 
 When the MongoDB container starts it runs the script [2-init-replica-set.sh](./data/scripts/2-init-replica-set.sh).
-The script is responsible for initiating the replica set mode through the execution of the `rs.initiate()`
-on the mongo instance. You can read the procedure in the [MongoDB documentation](https://www.mongodb.com/docs/manual/tutorial/convert-standalone-to-replica-set/).
+The script is responsible for initiating the replica set mode through the execution of the followin command on the mongo instace:
+
+```javascript
+rs.initiate()
+```
+
+You can read that procedure in the [MongoDB documentation](https://www.mongodb.com/docs/manual/tutorial/convert-standalone-to-replica-set/). However, the procedure is manual. Meaning one have to connect to the `mongod` using `mongosh` tool and execute the `rs.initiate()` manually.
+
+The [2-init-replica-set.sh](./data/scripts/2-init-replica-set.sh) script executes exactly that command
+but automatically, during the container initialization phase.
 
 ---
 
